@@ -1,0 +1,193 @@
+/* ================================= 
+  General
+==================================== */
+
+body {
+	font-family: 'Droid Sans', sans-serif;
+	margin: 0;  /* this is how you get rid of white framing around site. */
+	padding: 0;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 60%;
+	text-align: center;
+	font-size: 1.25rem;
+}
+
+img:after   { content:" (image)"; }
+img::after  { content:" (image)"; }
+
+
+
+/* ================================= 
+  Searchbox
+==================================== */
+
+.the-header {
+	width: 90%;
+	margin: 0 auto;
+	margin-bottom: 0rem;  /* change */
+}
+
+
+input[type="text"] {
+	width: 75%;
+	font-family: 'Droid Sans', sans-serif;
+	border-radius: 5px;
+	border: 2px solid #685F5D;
+	display: block;
+    margin : 0 auto;
+	margin-top: 2rem;
+	padding-left: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+input:focus {
+	outline: none;
+	border: 2.5px solid #877A77;
+}
+
+input:focus::-webkit-input-placeholder { color:transparent; }  /*make place holder disappear on focus */
+input:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+input:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  text-align: left;
+  font-family: 'Droid Sans', sans-serif;
+  font-size: .90rem;
+  font-style: italic;
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+  text-align: left;
+  font-family: 'Droid Sans', sans-serif;
+  font-size: .90rem;
+  font-style: italic;
+}
+
+:-ms-input-placeholder { /* IE 10+ */
+  text-align: left;
+  font-family: 'Droid Sans', sans-serif;
+  font-size: .90rem;
+  font-style: italic;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  text-align: left;
+  font-family: 'Droid Sans', sans-serif;
+  font-size: .90rem;
+  font-style: italic;
+}
+
+/* ================================= 
+  Image Gallery
+==================================== */
+
+.image-gallery {
+	margin-bottom: 0rem;
+}
+
+img {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.image-gallery p {
+	color: #8E8988;
+	/*display: none; set default display to none. only show in overlay*/
+}
+
+#hay-bales, #lake, #canyon, #iceberg, #desert, #fall, 
+#plantation, #dunes, #countryside, #sunset,
+#cave, #bluebells {
+	margin-top: 2.5rem;   
+	text-align: center;
+}
+
+
+
+/* ================================= 
+  Footer/Copyright
+==================================== */
+
+.copyright {
+	text-align: center;
+	color: #8E8988;
+	font-weight: bold;
+	padding-top: 3.25rem;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-bottom: 1.75rem;
+}
+
+
+
+/* ================================= 
+  Media Queries (768px: tablet screens)
+==================================== */
+
+@media (min-width: 768px) {
+		
+	input[type="text"] {
+		width: 65%;
+	}
+	
+	img {
+		max-width: 100%;
+	}
+	
+	#lake, #canyon, #iceberg, #desert, #fall, 
+	#plantation, #dunes, #countryside, #sunset,
+	#cave, #bluebells, #hay-bales {
+		width: 33.33%;
+		float: left; 
+	}
+	
+	.clearfix::after {   /* ABSOLUTE NECESSITY */
+		content: " ";
+		display: table;
+		clear: both;
+	}
+	
+}
+
+/* ================================= 
+  Media Queries (1024px: desktop screens)
+==================================== */
+
+@media (min-width: 1024px) {
+
+	.image-gallery {
+		max-width: 80%;
+		margin: 0 auto;
+	}
+	
+	img {
+		max-width: 100%;
+	}
+	
+	input[type="text"] {
+		width: 43%;
+	}	
+
+	#lake, #canyon, #iceberg, #desert, #fall, 
+	#plantation, #dunes, #countryside, #sunset,
+	#cave, #bluebells, #hay-bales {
+		width: 25%;
+	}
+	
+	.copyright {
+		padding-top: 5rem;
+	}
+}
