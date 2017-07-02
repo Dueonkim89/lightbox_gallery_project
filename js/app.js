@@ -18,12 +18,12 @@ var keyWords = [
 "Sky", "Plants", "Sand Dunes", "Sand", "Oregon", "Oregon Coast", "Countryside Lane", "Circle", "Bushes", 
 "Path", "Sunset", "Coast", "Waves", "Cave", "View", "Dirt Road", "Road", "Landscape", 
 "Trees", "Green", "Cloud", "Forest", "BlueBells", "Meadow", "Violet", "Field", "Hill", "Hills", "Fog", "Purple", 
-"Plant", "Sun", "Tree"
+"Plant", "Sun", "Tree", "Plain", "Plains"
 ];
 
 //Sync appropriate data to each parent div of images
 $('#hay-bales').data("searchWords", ["Hay Bales", "Clouds", "Plains", "Trees", "Dirt", "Wheat", "Straws", "Straw Field", "Hay", 
-	"Hay Field", "Straw", "Hays", "Green", "Grass", "Brown", "Blue", "Hill", "Sky", "Countryside", "Sunny", "Tree", "Cloud"]);
+	"Hay Field", "Straw", "Hays", "Green", "Grass", "Brown", "Blue", "Hill", "Sky", "Countryside", "Sunny", "Tree", "Cloud", "Plain"]);
 $('#lake').data("searchWords", ["Lake", "Clouds", "Ocean", "Water", "White", "Mountains", "Mountain", "Sky", "Snow", "Blue", "Cloud"]);
 $('#canyon').data("searchWords", ["Hike", "Mountain", "Canyon", "Trees", "Green", "Sky", "Cloudy", "Clouds", "Canyons", "Tree", "Cloud"]);
 $('#iceberg').data("searchWords", ["Iceberg", "Ice", "Cold", "Arctic", "Freezing", "Blue", "Sky", "Clouds", "Snow", "White", "Cloud"]);
